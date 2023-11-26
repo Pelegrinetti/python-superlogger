@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "python-superlogger"
+version = "0.0.0"
+description = "A simple and powerful logger for Python"
+authors = ["Pelegrinetti <pelegrinetti.dev@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
