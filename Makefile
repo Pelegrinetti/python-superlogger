@@ -1,3 +1,8 @@
+.PHONY: test
+
+test:
+	@pytest -v
+
 lint:
 	@ruff check .
 
