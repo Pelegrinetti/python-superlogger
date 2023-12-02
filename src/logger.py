@@ -22,7 +22,7 @@ class Logger:
         if not self._has_context():
             return message
 
-        context_items = ''.join(
+        context_items = ' '.join(
             [f'{key}={value}' for key, value in self._context.items()]
         )
 
@@ -52,9 +52,3 @@ class Logger:
         to_log = self._add_context(message)
 
         self._logger.critical(to_log)
-
-
-def get_logger(
-    provider: AbstractLoggerProvider | None = None, context: dict | None = None
-) -> Logger:
-    return Logger(provider, context)

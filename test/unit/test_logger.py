@@ -1,4 +1,4 @@
-from src.main import get_logger
+from src.logger import get_logger
 
 
 def test_instance_a_default_logger_without_provider():
