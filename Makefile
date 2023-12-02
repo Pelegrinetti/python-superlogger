@@ -12,6 +12,10 @@ welcome:
 test:
 	@pytest -v
 
+setup: install
+	@echo "Setting up"
+	@pre-commit install
+
 test-coverage:
 	@pytest -v --cov=src --cov-report=term-missing
 
@@ -48,4 +52,5 @@ help: welcome
 	@echo "  install             Install dependencies"
 	@echo "  build               Build the package"
 	@echo "  clean               Clean the package"
+	@echo "  setup               Set up the project"
 	@echo "  help                Show this help message"
