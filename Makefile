@@ -32,6 +32,8 @@ format:
 
 generate-requirements:
 	@echo "Generating requirements.txt"
+	@echo "Add Poetry export plugin"
+	@poetry self add poetry-plugin-export
 	@poetry export --output requirements.txt
 
 install:
