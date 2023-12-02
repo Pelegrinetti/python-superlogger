@@ -66,17 +66,21 @@ The `Logger` class is an abstraction around the logging provider. By default, th
 You can use any provider for logging by wrapping it with `AbstractLoggerProvider`. Example:
 
 ```python
-from superlogger import Logger
+from superlogger import Logger, get_logger
 from superlogger.abstract import AbstractLoggerProvider
 
 class LoggerProvider(AbstractLoggerProvider):
     # Implement abstract methods here...
+    pass
 
 # Create an instance of the provider
 logger_provider = LoggerProvider()
 
 # Create an instance of the logger with the custom provider
 logger = Logger(provider=logger_provider)
+
+# Or create logger with get_logger
+logger = get_logger(provider=logger_provider)
 ```
 
 ### Setting Context for Logging
