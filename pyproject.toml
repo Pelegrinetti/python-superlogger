@@ -2,10 +2,12 @@
 name = "superlogger"
 version = "0.0.0"
 description = "A simple and powerful logger for Python"
-authors = ["Pelegrinetti <pelegrinetti.dev@gmail.com>"]
+authors = ["Matheus Pelegrinetti <pelegrinetti.dev@gmail.com>"]
 license = "MIT"
 readme = "README.md"
 packages = [{include = "src/*.py"}]
+repository = "https://github.com/Pelegrinetti/python-supperlogger"
+keywords = ["superlogger", "logger", "logging"]
 
 
 [tool.poetry.dependencies]
